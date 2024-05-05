@@ -12,16 +12,16 @@ public class StringIntro {
         int sum = A.length() + B.length();
         System.out.println("Sum of length "+sum);
 
-        String a = A.substring(0,1);
-        String b = B.substring(0,1);
+        String a = A.substring(0,1).toUpperCase();
+        String b = B.substring(0,1).toUpperCase();
 
-        if(A.compareTo(B)<0){
-            System.out.println("No");
-            System.out.println(a.toUpperCase()+A.substring(1,A.length()) + " " + b.toUpperCase() + B.substring(1,B.length()));
-        }else{
+        if(A.compareTo(B)>0){
             System.out.println("Yes");
-            System.out.println(b.toUpperCase() + B.substring(1,B.length())+" "+a.toUpperCase()+A.substring(1,A.length()));
+        }else{
+            System.out.println("No");
         }
+
+        System.out.println(a + A.substring(1) + " " + b + B.substring(1));
 
 
     }
