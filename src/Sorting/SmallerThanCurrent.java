@@ -11,7 +11,6 @@ public class SmallerThanCurrent {
             for(int j=0; j<nums.length;j++){
 
                 if(nums[i]>nums[j]){
-
                     count++;
                 }
 
